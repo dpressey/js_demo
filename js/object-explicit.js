@@ -1,8 +1,8 @@
 
-	// instantiate a new person object
+	// instantiate a new animal object
 	var animal = new Object();
 
-	// assign person properties with values
+	// assign properties for the animal object
 
 	animal.name = "Lion";
 	// the age property with type number can be accessed with 
@@ -10,7 +10,7 @@
 	animal["age"] = 5;
 	animal.classType = "mammal";
 
-	// create setter functions for the person object
+	// create setter functions for the animal object
 
 	animal.setName = function(newName){
 		this.name = newName;
