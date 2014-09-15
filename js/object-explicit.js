@@ -1,26 +1,28 @@
-// Create a "container" namespace that wraps all properties and functions
-var container = {
+
 	// instantiate a new person object
-	var person = new Object();
+	var animal = new Object();
 
 	// assign person properties with values
 
-	person.name = "Denzel";
-	person["age"] = 24;
-	person.profession = "Web Developer";
+	animal.name = "Lion";
+	// the age property with type number can be accessed with 
+	// the array or dot notation
+	animal["age"] = 5;
+	animal.classType = "mammal";
 
 	// create setter functions for the person object
 
-	person.setName = function(newName){
+	animal.setName = function(newName){
 		this.name = newName;
+		return this.newName;
 	}
 
-	person.setAge = function(newAge){
+	animal.setAge = function(newAge){
 		this["age"] = newAge;
+		return this["age"];
 	}
 
-	person.setProfession = function(newProfession){
-		this.profession = newProfession;
+	animal.setClassType = function(newClassType){
+		this.classType = newClassType;
+		return this.classType;
 	}
-
-}
