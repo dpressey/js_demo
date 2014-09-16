@@ -16,7 +16,7 @@ Vehicle.prototype.setMaker = function(newMaker){
 }
 
 Vehicle.prototype.setModel = function(newModel){
-	this.setModel = newModel;
+	this.model = newModel;
 }
 
 Vehicle.prototype.setYear = function(newYear) {
